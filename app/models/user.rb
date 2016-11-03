@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :tweets
   has_many :pins
+  has_many :items
 end
