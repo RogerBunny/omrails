@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'devise'
 gem 'activeadmin', '~> 1.0.0.pre4'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem "acts_as_follower", github: "tcocca/acts_as_follower"
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -31,3 +33,4 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
