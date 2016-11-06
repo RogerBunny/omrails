@@ -28,8 +28,8 @@
                 <% else %>
                 <td><%= link_to 'Vote', vote_item_path(item), method: :post %></td>
                 <% end %>
-            <% end %>
-            <% if item.user == current.user %>
+            <% end %>            
+            <% if item.user == current_user %>
                 <td><%= link_to 'Edit', edit_item_path(item) %></td>
                <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <% end %>

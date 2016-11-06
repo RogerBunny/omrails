@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   resources :items do
     member do
       post 'vote', to: 'votes#create'
-      delete 'unvote', to 'votes#destroy'
+      delete 'unvote', to: 'votes#destroy'
     end
   end
   resources :pins
